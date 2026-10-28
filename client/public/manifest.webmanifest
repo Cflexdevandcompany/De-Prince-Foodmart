@@ -1,0 +1,24 @@
+{
+  "name": "Deprince Foodmart",
+  "short_name": "Deprince",
+  "description": "Fresh groceries and daily essentials for homes and businesses in Lagos.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F6FAF6",
+  "theme_color": "#044B18",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

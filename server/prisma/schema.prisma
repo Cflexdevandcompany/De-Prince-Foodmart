@@ -1,0 +1,85 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+}
+
+model Category {
+  id        String    @id @default(cuid())
+  name      String    @unique
+  slug      String    @unique
+  imageUrl  String?
+  sortOrder Int       @default(0)
+  products  Product[]
+}
+
+model Product {
+  id            String   @id @default(cuid())
+  name          String
+  slug          String   @unique
+  description   String?
+  price         Int
+  oldPrice      Int?
+  unit          String?
+  inStock       Boolean  @default(true)
+  featured      Boolean  @default(false)
+  imageUrl      String?
+  imagePublicId String?
+  categoryId    String
+  category      Category @relation(fields: [categoryId], references: [id])
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Banner {
+  id            String   @id @default(cuid())
+  imageUrl      String
+  imagePublicId String?
+  headline      String?
+  subtext       String?
+  buttonLabel   String?
+  buttonLink    String?
+  sortOrder     Int      @default(0)
+  active        Boolean  @default(true)
+  createdAt     DateTime @default(now())
+}
+
+model BlogPost {
+  id            String   @id @default(cuid())
+  title         String
+  slug          String   @unique
+  excerpt       String?
+  body          String
+  coverUrl      String?
+  coverPublicId String?
+  authorName    String
+  published     Boolean  @default(false)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Setting {
+  id               Int     @id @default(1)
+  businessName     String  @default("Deprince Foodmart")
+  ownerName        String  @default("")
+  phone            String  @default("08072206245")
+  whatsappNumber   String  @default("2348072206245")
+  email            String  @default("deprincefoodmart@gmail.com")
+  address          String  @default("Ajah Shopping Place, Obodo 1, Lagos, Nigeria")
+  openingHours     String?
+  instagramUrl     String?
+  facebookUrl      String?
+  logoUrl          String?
+  logoLightUrl     String?
+  checkoutGreeting String  @default("Hello Deprince Foodmart, I would like to order the items below:")
+}

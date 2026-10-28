@@ -1,0 +1,9 @@
+<svg width="260" height="80" viewBox="0 0 260 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="260" height="80" rx="18" fill="#044B18"/>
+  <circle cx="34" cy="42" r="20" fill="#FFFFFF"/>
+  <path d="M22 51C28 36 46 35 52 50C41 54 30 55 22 51Z" fill="#FF6B00"/>
+  <path d="M37 19C45 27 41 37 32 41C27 34 29 24 37 19Z" fill="#D4F7D8"/>
+  <path d="M55 23C60 26 63 32 61 37C57 35 52 34 48 33C49 28 51 25 55 23Z" fill="#D9E2E8"/>
+  <text x="82" y="40" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="700">Deprince</text>
+  <text x="83" y="61" fill="#D4F7D8" font-family="Montserrat, Arial, sans-serif" font-size="18" font-weight="600">Foodmart</text>
+</svg>

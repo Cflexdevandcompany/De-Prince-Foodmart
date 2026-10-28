@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F6FAF6"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#g)"/>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#044B18"/>
+      <stop offset="100%" stop-color="#007424"/>
+    </linearGradient>
+  </defs>
+  <circle cx="270" cy="300" r="180" fill="#ffffff" opacity="0.08"/>
+  <circle cx="928" cy="190" r="150" fill="#FF6B00" opacity="0.16"/>
+  <path d="M335 337c74-133 198-200 336-200-33 80-63 132-108 169-48 39-111 66-228 31Z" fill="#8FD14F"/>
+  <path d="M410 288c70-34 129-12 174 28 34 31 75 82 121 120-78 31-160 33-240 13-62-18-94-75-55-161Z" fill="#FF6B00"/>
+  <path d="M516 178h120v110H516z" fill="#FFFFFF"/>
+  <text x="120" y="430" fill="#FFFFFF" font-size="74" font-family="Arial, sans-serif" font-weight="700">Deprince Foodmart</text>
+  <text x="120" y="510" fill="#E8F6EA" font-size="32" font-family="Arial, sans-serif">Fresh groceries and essentials for Lagos</text>
+</svg>
